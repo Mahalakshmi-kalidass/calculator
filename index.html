@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   
+    <div class="container">
+      <form name="forms">
+        <input type="text" id="history"/>
+       <div class="displaydiv"> <input type="text" id="dis" name="display" disabled/></div>
+         <div class="row">
+         <input type="button" id="mod" value="%" class="bclr"  onclick="operator(this)"/>
+         <input type="button" id="pow" value="^" class="bclr" onclick="operator(this)"/>
+         <input type="button"  id="divide" class="bclr" onclick="operator(this)" value="/"/>
+         <input type="button" id="plus" value="+" class="bclr" onclick="operator(this)"/>
+        </div>
+        <div class="row">
+         <input type="button" id="one" value="1" onclick="calc(this)"/>
+         <input type="button" id="two" value="2" onclick="calc(this)"/>
+         <input type="button" id="three" value="3" onclick="calc(this)"/>
+         <input type="button" id="sub" class="bclr" value="-" onclick="operator(this)"/>
+        </div>
+        <div class="row">
+         <input type="button" id="four"  value="4" onclick="calc(this)"/>
+         <input type="button" id="five"  value="5" onclick="calc(this)"/>
+         <input type="button"  id="six" value="6" onclick="calc(this)"/>
+        <input type="button" id="mul"  class="bclr"  onclick="operator(this)"value="*"/>
+        </div>
+        <div class="row">
+         <input type="button" id="seven"  onclick="calc(this)" value="7"/>
+         <input type="button" id="eight"  onclick="calc(this)" value="8"/>
+         <input type="button" id="nine"   onclick="calc(this)"value="9"/>
+          <input type="button"  id="dot"class="bclr" onclick="calc(this)" value="."/>
+        </div>
+        <div class="row">
+         <input type="reset"  id="clear" class="bclr" onclick="calc(this)" value="clr"/>
+         <input type="button"  id="zero"  onclick="calc(this)"value="0"/>
+         <input type="button"  id="zerod"  onclick="calc(this)"value="00"/>
+
+        
+         <input type="button"  id="equal" class="bclr" onclick="showResult()"value="="/>
+        </div>
+
+      </form>
+    </div>
+     <script src="script.js"></script>
+  </body>
+</html>
